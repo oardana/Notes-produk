@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  
+  font-family:'Poppins';
+}
+
+.header{
+  border-bottom:1px solid gray;
+}
+
+.footer{
+  border-top: 1px solid gray;
+}
+.footer .container .row .column-3 p{
+  margin-left:100px;
+}
+.content {
+  background-color:white;
+}
+
+.content .container{
+  border-radius:10px;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+.content h3{
+  color:white;
+}
+
+.about{
+  padding:100px;
+}
+
+.about .container .row .col h1,button{
+  margin-left:30px;
+}
+.about .container .row .col img{
+  margin-left:150px;
+}
+
+.about .project h1{
+  margin-top:200px;
+}
+
+.about .project .kartu{
+ margin-top:200px;
+}
+
+hr{
+  border-top:5px solid green;
+  float:right;
+  margin-right:220px;
+  width:250px;
+}
+
+.contact{
+  padding:120px 0;
+  background-image: url(https://img.freepik.com/premium-vector/vector-modern-decorative-wave-design-background_921039-12127.jpg?w=1060);
+  background-size:cover;
+}
+
+.contact .container{
+  border-radius:10px;
+}
+
+.contact .container .row .col img{
+  width:400px;
+}
+.content .form-data button{
+  margin-top:20px;
+  display:flex;
+  background-color:#3e64ff;
+  color:white;
+}
+.container-fluid .container .row .order-3 p{
+  color:white;
+  margin-left:50%;
+}
+.container-fluid .container .row .site-logo p{
+  font-size: 25px;
+  color:#02BB5E;
+}
+.container-fluid .container .navbar .navbar-brand img{
+  background-size:cover;
+  height:100px;
+}
+@media only screen and (max-width: 600px){
+ .content{
+  padding:200px;
+ }
+  hr{
+    position:relative;
+    top:35px;
+    left:100%;
+    width:180px;
+  }
+
+  .about .container .row .col img{
+    margin-left:0;
+    width:100%;
+    padding-top:20px;
+  }
+   .footer .container .row .column-3 p{
+    margin-left:0;
+  }
+}

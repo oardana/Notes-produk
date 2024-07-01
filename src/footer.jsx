@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export default function Footer(){
 
     return(
@@ -7,13 +8,13 @@ export default function Footer(){
                     <div className="col-md-4">
                         <ul className="nav nav-underline">
                             <li className="nav-item">
-                                <a className="nav-link text-dark" href="/daftarproduk">Daftar Produk</a>
+                                <Link className="nav-link text-dark" to="/daftarproduk">Daftar Produk</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-dark" href="/tentangsaya">Tentang Saya</a>
+                                <Link className="nav-link text-dark" to="/tentangsaya">Tentang Saya</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-dark" href="/kontak">Contact</a>
+                                <Link className="nav-link text-dark" href="/kontak">Contact</Link>
                             </li>
                         </ul>
                     </div>

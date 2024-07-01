@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export default function Header () {
 
     return(
@@ -13,13 +14,13 @@ export default function Header () {
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav nav-underline">
                             <li className="nav-item text-dark">
-                                    <a className="nav-link" href="/daftarproduk">Daftar Produk</a>
+                                    <Link className="nav-link" to="/daftarproduk">Daftar Produk</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/tentangsaya">Tentang Saya</a>
+                                    <Link className="nav-link" to="/tentangsaya">Tentang Saya</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/kontak">Contact</a>
+                                    <Link className="nav-link" to="/kontak">Contact</Link>
                                 </li>
                             </ul>
                         </div>

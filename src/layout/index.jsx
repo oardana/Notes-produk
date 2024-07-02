@@ -83,33 +83,36 @@ export default function Content(){
                     <h3 className="pb-1">Total Stock: {totalStok}</h3>
                     <h3 className="pb-1">Total Harga Stock: {totalHarga}</h3>
                     <h3 className="pb-5">Total Harga Penjualan: {totalHargaTerjual}</h3>
-                    <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Nama Produk</th>
-                            <th scope="col">Harga</th>
-                            <th scope="col">Gambar Produk</th>
-                            <th scope="col">Stock</th>
-                            <th scope="col">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    {produk.map((produk) => (
-                            <tr key={produk.id}>
-                            
-                            <td>{produk.nama}</td>
-                            <td>{produk.harga}</td>
-                            <td><img src={produk.gambar} alt={produk.nama} style={{ width: '100px', height: '100px', objectFit: 'cover' }} /></td>
-                            <td>{produk.stock}</td>
-                            <td>
-                                <button className='btn btn-success m-2' onClick={() => tambahStock(produk.id)}><span className="material-symbols-outlined">note_add</span></button>
-                                <button className='btn btn-success m-2' onClick={() => penjualanProduk(produk.id)} disabled={produk.stock === 0}><span className="material-symbols-outlined">shopping_cart</span></button>
-                                <button className='btn btn-danger m-2' onClick={() => hapusProduk(produk.id)}><span className="material-symbols-outlined">delete</span></button>
-                            </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                    </table>
+                    <div className="table-responsive table--no-card m-b-30">
+                        <table class="table table-borderless table-striped table-earning">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th scope="col">Nama Produk</th>
+                                    <th scope="col">Harga</th>
+                                    <th scope="col">Gambar Produk</th>
+                                    <th scope="col">Stock</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {produk.map((produk,index) => (
+                                    <tr key={produk.id}>
+                                    <td>{index+ 1}</td>
+                                    <td>{produk.nama}</td>
+                                    <td>{produk.harga}</td>
+                                    <td><img src={produk.gambar} alt={produk.nama} style={{ width: '100px', height: '100px', objectFit: 'cover' }} /></td>
+                                    <td>{produk.stock}</td>
+                                    <td>
+                                        <button className='btn btn-success m-2' onClick={() => tambahStock(produk.id)}><span className="material-symbols-outlined">note_add</span></button>
+                                        <button className='btn btn-success m-2' onClick={() => penjualanProduk(produk.id)} disabled={produk.stock === 0}><span className="material-symbols-outlined">shopping_cart</span></button>
+                                        <button className='btn btn-danger m-2' onClick={() => hapusProduk(produk.id)}><span className="material-symbols-outlined">delete</span></button>
+                                    </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
            </div>
         </div>
     )

@@ -14,7 +14,7 @@ export default function Footer(){
                                 <Link className="nav-link text-dark" to="/tentangsaya">Tentang Saya</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link text-dark" href="/kontak">Contact</Link>
+                                <Link className="nav-link text-dark" to="/kontak">Contact</Link>
                             </li>
                         </ul>
                     </div>

@@ -62,7 +62,6 @@ hr{
 .contact .container{
   border-radius:10px;
 }
-
 .contact .container .row .col img{
   width:400px;
 }
@@ -84,21 +83,30 @@ hr{
   background-size:cover;
   height:100px;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 400px){
  .content{
   padding:200px;
  }
   hr{
     position:relative;
     top:35px;
-    left:100%;
-    width:180px;
+    left:140%;
+    width:100px;
   }
-
+  .contact .container .row .col img{
+    width:300px;
+  }
+  .about .container .row .col{
+    
+  }
   .about .container .row .col img{
-    margin-left:0;
-    width:100%;
-    padding-top:20px;
+    margin-left:-30px;
+    width:170%;
+    padding-top:60px;
+  }
+  .footer .container .col-md-4 .nav .nav-item{
+    font-size:10px;
+    padding-bottom:20px;
   }
    .footer .container .row .column-3 p{
     margin-left:0;

@@ -40,7 +40,6 @@ export default function Contact(){
     return(
         <div className="contact container-fluid ">
             <div className="container">
-
                 <h1 className="text-center p-5">Anda Punya Pertanyaan ?</h1>
                 <div className="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
                     <div className="col">
